@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>PS4k User</author>
+<authoring_tool>1.4.31</authoring_tool>
+</contributor>
+<created>2015-08-22T23:39:42</created>
+<modified>2015-08-22T23:39:42</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Z_UP</up_axis>
+</asset>
+<library_effects>
+<effect id="Material_211_12_22-effect">
+<profile_COMMON>
+<technique sid="common">
+<lambert>
+<emission>
+<color sid="emission">0 0 0 1</color>
+</emission>
+<ambient>
+<color sid="ambient">0 0 0 1</color>
+</ambient>
+<diffuse>
+<color sid="diffuse">0.827451 0.047058824 0.08627451 1</color>
+</diffuse>
+<index_of_refraction>
+<float sid="index_of_refraction">1</float>
+</index_of_refraction>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="Material_211_12_22-material" name="Material_211_12_22">
+<instance_effect url="#Material_211_12_22-effect"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-color-mesh" name="Plane-color">
+<mesh>
+<source id="Plane-color-mesh-positions">
+<float_array count="216" id="Plane-color-mesh-positions-array">-15 19 23 -15 17 23 -15 17 25 -15 19 25 -15 19 29 -15 17 29 -15 17 31 -15 19 31 -15 19 27 -15 17 27 -15 21 9 -15 19 9 -15 19 11 -15 21 11 -15 19 19 -15 17 19 -15 17 21 -15 19 21 -15 17 11 -15 17 13 -15 19 13 -15 15 11 -15 15 13 -15 15 27 -15 15 29 -15 19 17 -15 17 17 -15 17 9 -15 15 9 -15 13 29 -15 13 31 -15 15 31 -15 21 13 -15 19 15 -15 17 15 -15 13 27 -13 19 25 -13 17 25 -13 17 23 -13 19 23 -13 19 31 -13 17 31 -13 17 29 -13 19 29 -13 17 27 -13 19 27 -13 21 11 -13 19 11 -13 19 9 -13 21 9 -13 19 21 -13 17 21 -13 17 19 -13 19 19 -13 19 13 -13 17 13 -13 17 11 -13 15 13 -13 15 11 -13 15 29 -13 15 27 -13 17 17 -13 19 17 -13 17 9 -13 15 9 -13 15 31 -13 13 31 -13 13 29 -13 21 13 -13 17 15 -13 19 15 -13 13 27 </float_array>
+<technique_common>
+<accessor count="72" source="#Plane-color-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-color-mesh-vertices">
+<input semantic="POSITION" source="#Plane-color-mesh-positions"/>
+</vertices>
+<polylist count="70" material="Material_211_12_22-material">
+<input offset="0" semantic="VERTEX" source="#Plane-color-mesh-vertices"/>
+<vcount>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
+<p>43 42 44 45 62 25 14 53 42 59 60 44 46 13 32 68 10 11 12 13 55 57 58 56 13 12 20 32 25 26 15 14 45 44 37 36 20 19 34 33 44 60 23 9 27 28 21 18 67 29 35 71 53 14 17 50 61 26 34 69 17 16 1 0 57 22 21 58 31 30 66 65 54 55 56 47 48 63 27 11 52 15 26 61 36 37 38 39 9 23 24 5 69 34 19 55 58 21 28 64 43 4 7 40 45 8 4 43 19 22 57 55 37 2 1 38 6 31 65 41 62 61 69 70 23 35 29 24 44 9 2 37 50 17 0 39 33 34 26 25 68 54 47 46 8 9 5 4 63 64 28 27 36 3 8 45 49 10 13 46 60 71 35 23 4 5 6 7 59 67 71 60 50 51 52 53 70 33 25 62 65 66 67 59 18 21 22 19 70 69 55 54 38 1 16 51 14 15 16 17 12 18 19 20 49 48 11 10 53 52 61 62 7 6 41 40 39 38 51 50 5 24 31 6 54 20 33 70 24 29 30 31 3 2 9 8 39 0 3 36 51 16 15 52 47 56 63 48 0 1 2 3 41 65 59 42 11 27 18 12 66 30 29 67 40 41 42 43 32 20 54 68 46 47 48 49 56 58 64 63 </p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="PlaneCOL" name="PlaneCOL" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-color-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="Material_211_12_22-material" target="#Material_211_12_22-material"/>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
