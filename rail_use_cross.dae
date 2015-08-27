@@ -4,27 +4,27 @@
 <author>VoxelShop User</author>
 <authoring_tool>VoxelShop V1.4.35</authoring_tool>
 </contributor>
-<created>2015-08-26T23:48:18</created>
-<modified>2015-08-26T23:48:18</modified>
+<created>2015-08-26T23:52:07</created>
+<modified>2015-08-26T23:52:07</modified>
 <unit meter="1" name="meter"/>
 <up_axis>Y_UP</up_axis>
 </asset>
 <library_images>
-<image id="rail4_texture0-image" name="rail4_texture0-image">
-<init_from>rail4_texture0.png</init_from>
+<image id="rail_use_cross_texture0-image" name="rail_use_cross_texture0-image">
+<init_from>rail_use_cross_texture0.png</init_from>
 </image>
 </library_images>
 <library_effects>
 <effect id="lambert0-fx">
 <profile_COMMON>
-<newparam sid="rail4_texture0-surface">
+<newparam sid="rail_use_cross_texture0-surface">
 <surface type="2D">
-<init_from>rail4_texture0-image</init_from>
+<init_from>rail_use_cross_texture0-image</init_from>
 </surface>
 </newparam>
-<newparam sid="rail4_texture0-sampler">
+<newparam sid="rail_use_cross_texture0-sampler">
 <sampler2D>
-<source>rail4_texture0-surface</source>
+<source>rail_use_cross_texture0-surface</source>
 </sampler2D>
 </newparam>
 <technique sid="common">
@@ -36,7 +36,7 @@
 <color>0 0 0 1</color>
 </ambient>
 <diffuse>
-<texture texcoord="TEX0" texture="rail4_texture0-sampler"/>
+<texture texcoord="TEX0" texture="rail_use_cross_texture0-sampler"/>
 </diffuse>
 </lambert>
 </technique>
@@ -52,7 +52,7 @@
 <geometry id="Plane-tex-mesh" name="Plane-tex">
 <mesh>
 <source id="Plane-tex-mesh-positions">
-<float_array count="144" id="Plane-tex-mesh-positions-array">2 0 10 2 2 10 2 2 8 2 2 6 2 0 -10 2 2 -6 2 2 -8 2 2 -10 -8 0 10 -8 2 10 -8 2 8 -8 2 6 -8 0 -10 -8 2 -6 -8 2 -8 -8 2 -10 -12 4 8 -12 2 6 -12 2 8 -12 4 6 -12 4 -6 -12 2 -8 -12 2 -6 -12 4 -8 4 0 10 4 2 10 4 2 8 4 2 6 4 0 -10 4 2 -6 4 2 -8 4 2 -10 8 4 8 8 2 6 8 2 8 8 4 6 8 4 -6 8 2 -8 8 2 -6 8 4 -8 -6 0 10 -6 2 10 -6 2 8 -6 2 6 -6 0 -10 -6 2 -6 -6 2 -8 -6 2 -10</float_array>
+<float_array count="144" id="Plane-tex-mesh-positions-array">3 -1 9 3 1 9 3 1 7 3 1 5 3 -1 -11 3 1 -7 3 1 -9 3 1 -11 -7 -1 9 -7 1 9 -7 1 7 -7 1 5 -7 -1 -11 -7 1 -7 -7 1 -9 -7 1 -11 -11 3 7 -11 1 5 -11 1 7 -11 3 5 -11 3 -7 -11 1 -9 -11 1 -7 -11 3 -9 5 -1 9 5 1 9 5 1 7 5 1 5 5 -1 -11 5 1 -7 5 1 -9 5 1 -11 9 3 7 9 1 5 9 1 7 9 3 5 9 3 -7 9 1 -9 9 1 -7 9 3 -9 -5 -1 9 -5 1 9 -5 1 7 -5 1 5 -5 -1 -11 -5 1 -7 -5 1 -9 -5 1 -11</float_array>
 <technique_common>
 <accessor count="48" source="#Plane-tex-mesh-positions-array" stride="3">
 <param name="X" type="float"/>
@@ -84,7 +84,7 @@
 </library_geometries>
 <library_visual_scenes>
 <visual_scene id="Scene" name="Scene">
-<node id="rail4" name="rail4" type="NODE">
+<node id="rail_use_cross" name="rail_use_cross" type="NODE">
 <translate sid="location">0 0 0</translate>
 <rotate sid="rotationZ">0 0 1 0</rotate>
 <rotate sid="rotationY">0 1 0 0</rotate>
