@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.4.35</authoring_tool>
+</contributor>
+<created>2015-08-26T23:35:14</created>
+<modified>2015-08-26T23:35:14</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Z_UP</up_axis>
+</asset>
+<library_images>
+<image id="rail_test_texture0-image" name="rail_test_texture0-image">
+<init_from>rail_test_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="rail_test_texture0-surface">
+<surface type="2D">
+<init_from>rail_test_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="rail_test_texture0-sampler">
+<sampler2D>
+<source>rail_test_texture0-surface</source>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="rail_test_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-positions">
+<float_array count="144" id="Plane-tex-mesh-positions-array">-10 -10 0 -10 -8 -2 -10 -10 -2 -10 -8 0 -10 4 0 -10 6 -2 -10 4 -2 -10 6 0 -6 -12 -4 -6 -12 -2 -6 -10 -2 -6 -8 -2 -6 8 -4 -6 4 -2 -6 6 -2 -6 8 -2 4 -12 -4 4 -12 -2 4 -10 -2 4 -8 -2 4 8 -4 4 4 -2 4 6 -2 4 8 -2 -4 -12 -4 -4 -12 -2 -4 -10 -2 -4 -8 -2 -4 8 -4 -4 4 -2 -4 6 -2 -4 8 -2 6 -12 -4 6 -12 -2 6 -10 -2 6 -8 -2 6 8 -4 6 4 -2 6 6 -2 6 8 -2 10 -10 0 10 -8 -2 10 -10 -2 10 -8 0 10 4 0 10 6 -2 10 4 -2 10 6 0</float_array>
+<technique_common>
+<accessor count="48" source="#Plane-tex-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-uvs">
+<float_array count="82" id="Plane-tex-mesh-uvs-array">0.16690236 0.33356905 0.33321548 0.6661953 0.33321548 0.33356905 0.16678452 0.33380473 0.16678452 0.66643095 0.33309764 0.66643095 0.83309764 0.33356905 0.6667845 0.33356905 0.6667845 0.6661953 0.833 0.33383334 0.66683334 0.5 0.66683334 0.66616666 0.8332266 0.66628253 0.8332266 0.3335894 0.6668801 0.40012804 0.66681576 0.3338551 0.66681576 0.58318424 0.8330352 0.666294 0.66683334 0.33383334 0.833 0.66616666 0.6667845 0.33380473 0.6667845 0.66643095 0.83309764 0.66643095 0.66690236 0.33356905 0.8332155 0.6661953 0.8332155 0.33356905 0.33309764 0.33356905 0.16678452 0.33356905 0.16678452 0.6661953 0.16693018 0.6660342 0.33312252 0.33364958 0.27772507 0.33364958 0.33316058 0.66646343 0.21670732 0.33373982 0.16679877 0.66646343 0.2618812 0.3336633 0.16692594 0.3336633 0.33309764 0.6660067 0.22227493 0.33364958 0.16687748 0.33364958 0.3330698 0.6660342</float_array>
+<technique_common>
+<accessor count="41" source="#Plane-tex-mesh-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
+</vertices>
+<polylist count="96" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 4 0 5 1 6 2 4 3 7 4 5 5 8 6 9 7 10 8 8 9 10 10 11 11 12 12 8 13 11 14 11 15 13 16 12 17 13 18 14 10 12 19 14 20 15 21 12 22 16 6 17 7 18 8 16 9 18 10 19 11 20 12 16 13 19 14 19 15 21 16 20 17 21 18 22 10 20 19 22 20 23 21 20 22 25 7 24 6 26 8 26 10 24 9 27 11 24 13 28 12 27 14 29 16 27 15 28 17 30 10 29 18 28 19 31 21 30 20 28 22 33 7 32 6 34 8 34 10 32 9 35 11 32 13 36 12 35 14 37 16 35 15 36 17 38 10 37 18 36 19 39 21 38 20 36 22 41 1 40 0 42 2 43 4 40 3 41 5 45 1 44 0 46 2 47 4 44 3 45 5 35 1 42 0 34 2 41 4 42 3 35 5 38 1 46 0 37 2 45 4 46 3 38 5 30 1 21 0 29 2 22 4 21 3 30 5 27 1 18 0 26 2 19 4 18 3 27 5 5 1 13 0 6 2 14 4 13 3 5 5 1 1 10 0 2 2 11 4 10 3 1 5 20 24 32 23 16 25 36 21 32 20 20 22 12 24 24 23 8 25 28 21 24 20 12 22 40 0 3 1 0 2 40 3 43 4 3 5 44 0 7 1 4 2 44 3 47 4 7 5 33 23 18 24 17 25 33 20 34 21 18 22 35 23 21 24 19 25 35 20 37 21 21 22 38 23 23 24 22 25 38 20 39 21 23 22 30 23 15 24 14 25 30 20 31 21 15 22 27 23 13 24 11 25 27 20 29 21 13 22 25 23 10 24 9 25 25 20 26 21 10 22 37 26 46 27 44 28 44 29 21 30 37 31 4 32 21 33 44 34 29 35 21 36 4 37 13 38 29 39 4 40 13 0 4 1 6 2 34 26 42 27 40 28 40 29 18 30 34 31 0 32 18 33 40 34 26 35 18 36 0 37 10 38 26 39 0 40 10 0 0 1 2 2 32 23 17 24 16 25 32 20 33 21 17 22 24 23 9 24 8 25 24 20 25 21 9 22 45 27 38 26 47 28 22 30 47 29 38 31 22 33 7 32 47 34 22 36 30 35 7 37 30 39 14 38 7 40 7 1 14 0 5 2 23 24 36 23 20 25 39 21 36 20 23 22 15 24 28 23 12 25 31 21 28 20 15 22 41 27 35 26 43 28 19 30 43 29 35 31 19 33 3 32 43 34 19 36 27 35 3 37 27 39 11 38 3 40 3 1 11 0 1 2</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="rail_test" name="rail_test" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-tex-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
