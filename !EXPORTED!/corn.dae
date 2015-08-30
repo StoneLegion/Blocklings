@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.4.35</authoring_tool>
+</contributor>
+<created>2015-08-27T23:01:38</created>
+<modified>2015-08-27T23:01:38</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Y_UP</up_axis>
+</asset>
+<library_images>
+<image id="corn_texture0-image" name="corn_texture0-image">
+<init_from>corn_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="corn_texture0-surface">
+<surface type="2D">
+<init_from>corn_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="corn_texture0-sampler">
+<sampler2D>
+<source>corn_texture0-surface</source>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="corn_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-positions">
+<float_array count="78" id="Plane-tex-mesh-positions-array">-2 -2 2 -2 -4 0 -2 -4 2 -2 -2 -2 -2 -8 -2 -2 -8 0 -2 -8 2 -2 -10 0 -2 -10 2 -4 -4 2 -4 -8 0 -4 -8 2 -4 -4 0 0 -2 2 0 -4 0 0 -4 2 0 -2 -2 0 -8 -2 0 -8 0 0 -8 2 0 -10 0 0 -10 2 2 -4 2 2 -8 0 2 -8 2 2 -4 0</float_array>
+<technique_common>
+<accessor count="26" source="#Plane-tex-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-uvs">
+<float_array count="48" id="Plane-tex-mesh-uvs-array">0.33380473 0.16678452 0.66643095 0.33309764 0.66643095 0.16678452 0.3335 0.33352083 0.3335 0.6664792 0.6663333 0.5 0.44451112 0.66686666 0.3336 0.83323336 0.6663333 0.83323336 0.33380473 0.6667845 0.66643095 0.83309764 0.66643095 0.6667845 0.33356905 0.66690236 0.33356905 0.8332155 0.6661953 0.8332155 0.33370313 0.333472 0.6664818 0.66638935 0.6664818 0.333472 0.33351824 0.33361068 0.33351824 0.666528 0.66629684 0.666528 0.33356905 0.16690236 0.33356905 0.33321548 0.6661953 0.33321548</float_array>
+<technique_common>
+<accessor count="24" source="#Plane-tex-mesh-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
+</vertices>
+<polylist count="48" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 1 6 3 7 4 8 1 9 4 10 5 11 6 9 7 10 8 11 6 12 5 13 7 14 9 9 10 10 11 11 9 12 12 13 10 14 14 1 13 0 15 2 16 4 13 3 14 5 16 7 14 6 17 8 17 10 14 9 18 11 20 10 19 9 21 11 18 13 19 12 20 14 23 10 22 9 24 11 25 13 22 12 23 14 18 10 24 9 19 11 23 13 24 12 18 14 4 10 18 9 5 11 17 13 18 12 4 14 10 10 6 9 11 11 5 13 6 12 10 14 7 10 21 9 8 11 20 13 21 12 7 14 22 9 14 10 15 11 22 12 25 13 14 14 2 9 12 10 9 11 2 12 1 13 12 14 13 15 3 16 0 17 13 18 16 19 3 20 24 9 15 10 19 11 19 21 15 22 2 23 24 12 22 13 15 14 15 0 0 1 2 2 19 0 2 1 6 2 15 21 13 22 0 23 6 12 2 13 9 14 21 12 19 13 6 14 6 9 9 10 11 11 21 9 6 10 8 11 3 10 17 9 4 11 16 13 17 12 3 14 14 10 23 9 18 11 25 13 23 12 14 14 5 10 20 9 7 11 18 13 20 12 5 14 12 10 5 9 10 11 1 13 5 12 12 14</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="corn" name="corn" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-tex-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
