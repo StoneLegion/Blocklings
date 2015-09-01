@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.4.36</authoring_tool>
+</contributor>
+<created>2015-09-01T03:10:43</created>
+<modified>2015-09-01T03:10:43</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Y_UP</up_axis>
+</asset>
+<library_images>
+<image id="chip_texture0-image" name="chip_texture0-image">
+<init_from>chip_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="chip_texture0-surface">
+<surface type="2D">
+<init_from>chip_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="chip_texture0-sampler">
+<sampler2D>
+<source>chip_texture0-surface</source>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="chip_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-positions">
+<float_array count="24" id="Plane-tex-mesh-positions-array">-10 -8 10 -10 -10 -10 -10 -10 10 -10 -8 -10 10 -8 10 10 -10 -10 10 -10 10 10 -8 -10</float_array>
+<technique_common>
+<accessor count="8" source="#Plane-tex-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-uvs">
+<float_array count="58" id="Plane-tex-mesh-uvs-array">0.19990572 0.55559486 0.13338047 0.61103255 0.13338047 0.55559486 0.19995286 0.55563414 0.19995286 0.6110718 0.13342762 0.6110718 0.8667162 0.055607136 0.9333086 0.6110079 0.9333086 0.055607136 0.8666914 0.05565872 0.8666914 0.61105955 0.9332838 0.61105955 0.7999057 0.05559484 0.13338047 0.05559484 0.7332862 0.38896745 0.7332862 0.94440514 0.06676095 0.94440514 0.73342454 0.7778183 0.81662107 0.83325225 0.81662107 0.7778183 0.73337895 0.77785885 0.73337895 0.8332928 0.81657547 0.8332928 0.93328273 0.65880245 0.8667679 0.7380591 0.93328273 0.7380591 0.9332321 0.6587663 0.8667173 0.6587663 0.8667173 0.7380229</float_array>
+<technique_common>
+<accessor count="29" source="#Plane-tex-mesh-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
+</vertices>
+<polylist count="12" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 5 7 4 6 6 8 7 10 4 9 5 11 1 1 6 12 2 13 5 15 6 14 1 16 4 12 3 1 0 13 4 14 7 15 3 16 6 17 0 18 2 19 6 20 4 21 0 22 3 24 5 23 1 25 7 27 5 26 3 28</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="chip" name="chip" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-tex-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
