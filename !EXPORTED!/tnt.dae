@@ -4,8 +4,8 @@
 <author>VoxelShop User</author>
 <authoring_tool>VoxelShop V1.4.36</authoring_tool>
 </contributor>
-<created>2015-09-05T14:10:12</created>
-<modified>2015-09-05T14:10:12</modified>
+<created>2015-09-06T15:25:20</created>
+<modified>2015-09-06T15:25:20</modified>
 <unit meter="1" name="meter"/>
 <up_axis>Y_UP</up_axis>
 </asset>
@@ -52,7 +52,7 @@
 <geometry id="Plane-tex-mesh" name="Plane-tex">
 <mesh>
 <source id="Plane-tex-mesh-positions">
-<float_array count="105" id="Plane-tex-mesh-positions-array">-2 2 6 -2 -10 4 -2 -10 6 -2 2 4 -2 2 0 -2 -10 -2 -2 -10 0 -2 2 -2 0 6 4 0 4 2 0 4 4 0 6 0 0 2 0 0 2 2 -4 2 4 -4 -10 0 -4 -10 4 -4 2 0 2 6 4 2 4 2 2 4 4 2 6 0 2 2 0 2 2 2 2 -10 -2 2 -10 0 2 2 -2 2 2 6 2 -10 4 2 -10 6 2 2 4 4 2 4 4 -10 0 4 -10 4 4 2 0</float_array>
+<float_array count="105" id="Plane-tex-mesh-positions-array">-1 5 5 -1 -7 3 -1 -7 5 -1 5 3 -1 5 -1 -1 -7 -3 -1 -7 -1 -1 5 -3 1 9 3 1 7 1 1 7 3 1 9 -1 1 5 -1 1 5 1 -3 5 3 -3 -7 -1 -3 -7 3 -3 5 -1 3 9 3 3 7 1 3 7 3 3 9 -1 3 5 -1 3 5 1 3 -7 -3 3 -7 -1 3 5 -3 3 5 5 3 -7 3 3 -7 5 3 5 3 5 5 3 5 -7 -1 5 -7 3 5 5 -1</float_array>
 <technique_common>
 <accessor count="35" source="#Plane-tex-mesh-positions-array" stride="3">
 <param name="X" type="float"/>
