@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.4.39</authoring_tool>
+</contributor>
+<created>2015-09-12T01:41:18</created>
+<modified>2015-09-12T01:41:18</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Y_UP</up_axis>
+</asset>
+<library_images>
+<image id="stone_slab_texture0-image" name="stone_slab_texture0-image">
+<init_from>stone_slab_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="stone_slab_texture0-surface">
+<surface type="2D">
+<init_from>stone_slab_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="stone_slab_texture0-sampler">
+<sampler2D>
+<source>stone_slab_texture0-surface</source>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="stone_slab_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-positions">
+<float_array count="24" id="Plane-tex-mesh-positions-array">-10 0 10 -10 -10 -10 -10 -10 10 -10 0 -10 10 0 10 10 -10 -10 10 -10 10 10 0 -10</float_array>
+<technique_common>
+<accessor count="8" source="#Plane-tex-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-uvs">
+<float_array count="72" id="Plane-tex-mesh-uvs-array">0.5238715 0.5614168 0.7618738 0.73681545 0.7618738 0.5614168 0.2856833 0.40353543 0.2856833 0.5789341 0.047681026 0.5789341 0.5237734 0.087742135 0.047691356 0.17542718 0.5237734 0.17542718 0.5237372 0.017555278 0.047655202 0.017555278 0.047655202 0.10524032 0.7618711 0.3859401 0.28578162 0.21053872 0.7618711 0.21053872 0.047652718 0.19300726 0.047652718 0.36840865 0.5237422 0.36840865 0.7618374 0.40352118 0.28574795 0.57892257 0.28574795 0.40352118 0.047652718 0.7017792 0.047652718 0.8771806 0.5237422 0.8771806 0.42860243 0.59651786 0.6666047 0.7719165 0.42860243 0.7719165 0.71424955 0.89475965 0.71424955 0.9824447 0.23816755 0.9824447 0.9047309 0.21049967 0.6667287 0.03510104 0.9047309 0.03510104 0.7143477 0.89472353 0.95234996 0.89472353 0.95234996 0.7193249</float_array>
+<technique_common>
+<accessor count="36" source="#Plane-tex-mesh-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
+</vertices>
+<polylist count="12" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 5 7 4 6 6 8 7 10 4 9 5 11 1 13 6 12 2 14 5 16 6 15 1 17 4 18 3 19 0 20 4 21 7 22 3 23 6 24 0 25 2 26 6 27 4 28 0 29 3 31 5 30 1 32 7 34 5 33 3 35</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="stone_slab" name="stone_slab" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-tex-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
