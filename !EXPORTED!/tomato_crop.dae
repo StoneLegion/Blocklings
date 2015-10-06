@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.4.36</authoring_tool>
+</contributor>
+<created>2015-09-04T01:41:23</created>
+<modified>2015-09-04T01:41:23</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Y_UP</up_axis>
+</asset>
+<library_images>
+<image id="tomato_crop_texture0-image" name="tomato_crop_texture0-image">
+<init_from>tomato_crop_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="tomato_crop_texture0-surface">
+<surface type="2D">
+<init_from>tomato_crop_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="tomato_crop_texture0-sampler">
+<sampler2D>
+<source>tomato_crop_texture0-surface</source>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="tomato_crop_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-positions">
+<float_array count="279" id="Plane-tex-mesh-positions-array">-2 6 2 -2 4 0 -2 4 2 -2 6 0 -2 4 6 -2 2 4 -2 0 6 -2 0 4 -2 2 2 -2 0 0 -2 -2 2 -2 -2 0 -2 2 0 -2 0 -2 -2 2 -4 -2 -2 -4 -2 -2 -2 -2 -4 6 -2 -6 4 -2 -8 6 -2 -8 4 -2 -4 2 -2 -6 2 -2 -6 0 -2 -10 0 -2 -4 0 -2 -10 2 -2 -6 -2 -2 -4 -4 -2 -8 -4 -2 -8 -2 2 4 2 2 2 0 2 2 2 2 4 0 2 -2 2 2 -4 0 2 -4 2 2 -2 0 -6 4 2 -6 0 0 -6 0 2 -6 4 0 -6 -2 2 -6 -6 0 -6 -6 2 -6 -2 0 0 4 6 0 2 4 0 0 6 0 0 4 0 4 2 0 2 2 0 2 0 0 0 0 0 4 0 0 0 -2 0 0 2 0 2 -4 0 -2 -4 0 -2 -2 0 -2 2 0 -4 0 0 -4 2 0 -6 0 0 -2 0 0 -6 -2 0 -6 2 0 -4 -4 0 -10 0 0 -6 4 0 -8 -4 0 -10 2 0 -4 6 0 -8 -2 0 -8 6 0 -8 4 4 6 2 4 2 0 4 2 2 4 6 0 4 0 2 4 -4 0 4 -4 2 4 0 0 -4 2 2 -4 0 0 -4 0 2 -4 2 0 -4 -4 2 -4 -6 0 -4 -6 2 -4 -4 0</float_array>
+<technique_common>
+<accessor count="93" source="#Plane-tex-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-uvs">
+<float_array count="108" id="Plane-tex-mesh-uvs-array">0.16690236 0.33356905 0.33321548 0.6661953 0.33321548 0.33356905 0.16678452 0.33380473 0.16678452 0.66643095 0.33309764 0.66643095 0.33352083 0.3335 0.5 0.6663333 0.6664792 0.3335 0.66690236 0.66643095 0.8332155 0.66643095 0.8332155 0.33380473 0.16675912 0.33361068 0.16675912 0.66638935 0.33314842 0.5 0.16690236 0.66643095 0.33321548 0.66643095 0.33321548 0.33380473 0.16680534 0.33351824 0.25 0.66629684 0.33319467 0.33351824 0.5 0.33366665 0.33352083 0.6665 0.6664792 0.6665 0.66690236 0.33356905 0.8332155 0.6661953 0.8332155 0.33356905 0.6667845 0.33380473 0.6667845 0.66643095 0.83309764 0.66643095 0.33361068 0.33351824 0.666528 0.66629684 0.666528 0.33351824 0.333472 0.33370313 0.333472 0.6664818 0.66638935 0.6664818 0.25 0.33370313 0.16680534 0.6664818 0.33319467 0.6664818 0.33309764 0.33356905 0.16678452 0.33356905 0.16678452 0.6661953 0.3332409 0.33361068 0.16685157 0.5 0.3332409 0.66638935 0.83309764 0.33356905 0.6667845 0.33356905 0.6667845 0.6661953 0.22225556 0.33373332 0.1668 0.66646665 0.33316666 0.66646665 0.25 0.33366665 0.16691667 0.33366665 0.33308333 0.666</float_array>
+<technique_common>
+<accessor count="54" source="#Plane-tex-mesh-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
+</vertices>
+<polylist count="182" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 4 6 5 7 6 8 5 9 7 10 6 11 4 12 2 13 5 14 2 15 8 16 5 17 8 18 9 19 10 20 9 15 11 16 10 17 8 3 12 4 9 5 12 0 13 1 9 2 12 12 14 13 13 14 13 21 14 22 15 23 13 24 15 25 16 26 17 6 18 7 19 8 18 9 20 10 19 11 17 12 21 13 18 14 21 15 22 16 18 17 21 0 23 1 22 2 22 3 23 4 24 5 21 3 25 4 23 5 22 0 24 1 26 2 25 0 27 1 23 2 25 12 28 13 27 14 27 21 28 22 29 23 27 24 29 25 30 26 31 24 32 25 33 26 31 27 34 28 32 29 35 24 36 25 37 26 35 27 38 28 36 29 39 30 40 31 41 32 39 33 42 34 40 35 43 30 44 31 45 32 43 33 46 34 44 35 48 7 47 6 49 8 50 10 48 9 49 11 51 13 47 12 48 14 52 16 51 15 48 17 53 1 51 0 52 2 53 4 52 3 54 5 55 4 51 3 53 5 56 1 53 0 54 2 54 1 52 0 57 2 53 12 56 14 58 13 58 22 56 21 59 23 59 25 56 24 60 26 62 1 61 0 63 2 62 4 63 3 64 5 65 4 61 3 62 5 66 1 62 0 64 2 64 1 63 0 67 2 62 12 66 14 68 13 64 4 67 3 69 5 67 16 63 15 70 17 68 22 66 21 71 23 69 1 67 0 72 2 63 13 73 12 70 14 71 25 66 24 74 26 70 7 73 6 75 8 76 10 70 9 75 11 78 31 77 30 79 32 80 34 77 33 78 35 82 31 81 30 83 32 84 34 81 33 82 35 86 25 85 24 87 26 88 28 85 27 86 29 90 25 89 24 91 26 92 28 89 27 90 29 24 1 72 0 26 2 69 4 72 3 24 5 20 25 75 24 19 26 76 28 75 27 20 29 29 25 74 24 30 26 71 28 74 27 29 29 22 1 70 0 18 2 67 4 70 3 22 5 27 1 64 0 23 2 66 4 64 3 27 5 44 25 91 24 45 26 90 28 91 27 44 29 36 25 83 24 37 26 82 28 83 27 36 29 92 1 21 0 89 2 25 4 21 3 92 5 65 1 35 0 61 2 38 4 35 3 65 5 15 25 60 24 16 26 59 28 60 27 15 29 7 25 49 24 6 26 50 28 49 27 7 29 13 1 54 0 9 2 56 4 54 3 13 5 40 25 87 24 41 26 86 28 87 27 40 29 32 25 79 24 33 26 78 28 79 27 32 29 8 1 48 0 5 2 52 4 48 3 8 5 88 1 8 0 85 2 12 4 8 3 88 5 55 1 31 0 51 2 34 4 31 3 55 5 73 0 21 1 17 2 73 3 63 4 21 5 62 0 28 1 25 2 62 3 68 4 28 5 10 0 46 1 43 2 10 3 11 4 46 5 81 0 54 1 57 2 81 3 84 4 54 5 53 0 14 1 12 2 53 3 58 4 14 5 47 0 2 1 4 2 47 3 51 4 2 5 2 0 42 1 39 2 2 3 1 4 42 5 77 0 3 1 0 2 77 3 80 4 3 5 83 24 35 25 37 26 83 23 81 22 35 21 35 36 81 37 57 38 35 0 57 1 61 2 10 39 61 40 57 41 10 42 57 43 8 44 63 3 61 4 10 5 57 3 52 4 8 5 63 0 10 1 21 2 89 39 21 40 10 41 43 38 89 36 10 37 45 8 89 7 43 6 45 45 91 46 89 47 79 24 31 25 33 26 79 23 77 22 31 21 31 48 77 49 0 50 51 51 31 52 0 53 51 0 0 1 2 2 72 0 22 1 26 2 72 3 67 4 22 5 85 39 8 40 2 41 39 38 85 36 2 37 41 8 85 7 39 6 41 45 87 46 85 47 74 24 27 25 30 26 74 27 66 28 27 29 60 24 13 25 16 26 60 27 56 28 13 29 75 31 17 30 19 32 75 35 73 34 17 33 49 31 4 30 6 32 49 35 47 34 4 33 38 25 82 24 36 26 84 22 82 23 38 21 84 37 38 36 54 38 54 1 38 0 65 2 54 4 65 3 9 5 9 1 65 0 11 2 65 4 62 3 11 5 11 1 62 0 25 2 25 40 92 39 11 41 92 36 46 38 11 37 92 7 44 8 46 6 90 46 44 45 92 47 34 25 78 24 32 26 80 22 78 23 34 21 80 49 34 48 3 50 34 52 55 51 3 53 3 1 55 0 1 2 55 4 53 3 1 5 1 1 53 0 12 2 12 40 88 39 1 41 88 36 42 38 1 37 88 7 40 8 42 6 86 46 40 45 88 47 23 1 69 0 24 2 64 4 69 3 23 5 28 30 71 31 29 32 68 34 71 35 28 33 14 30 59 31 15 32 58 34 59 35 14 33 18 25 76 24 20 26 70 28 76 27 18 29 5 25 50 24 7 26 48 28 50 27 5 29</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="tomato_crop" name="tomato_crop" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-tex-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
