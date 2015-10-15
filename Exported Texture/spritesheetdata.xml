@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:783c53618abce573cad5ddc1e72c12ab:b8b2ac1d28aba4b0104a67fd2f69551c:74bc223a0b7a608ae513ccbf9be9a2d3$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="spritesheet.png" width="64" height="255">
+    <sprite n="basic_chest_small_texture0.png" x="43" y="106" w="9" h="17" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="basic_chest_texture0.png" x="54" y="106" w="6" h="17" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="bat_body_texture0.png" x="58" y="18" w="4" h="6" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="bat_wing_left_texture0.png" x="59" y="100" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="bat_wing_right_texture0.png" x="59" y="100" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="bench_texture0.png" x="56" y="173" w="6" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="butterfly_body_texture0.png" x="59" y="100" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="butterfly_wing_left_texture0.png" x="22" y="152" w="31" h="17" pX="0.5" pY="0.5"/>
+    <sprite n="butterfly_wing_right_texture0.png" x="2" y="178" w="15" h="38" pX="0.5" pY="0.5"/>
+    <sprite n="campfire_texture0.png" x="59" y="84" w="3" h="6" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="campfire_with_grill_texture0.png" x="59" y="34" w="3" h="9" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="car_battery_texture0.png" x="55" y="222" w="7" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="car_box_closed_red_texture0.png" x="22" y="171" w="30" h="11" pX="0.5" pY="0.5"/>
+    <sprite n="car_box_open_red_texture0.png" x="43" y="40" w="14" h="32" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="car_tank_blue_texture0.png" x="55" y="152" w="7" h="19" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="cart_basic_chest_small_texture0.png" x="45" y="184" w="9" h="18" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="chair_wood_texture0.png" x="37" y="217" w="5" h="13" pX="0.5" pY="0.5"/>
+    <sprite n="chip_texture0.png" x="19" y="200" w="18" h="15" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="coal_texture0.png" x="45" y="232" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="copper_bar_texture0.png" x="43" y="237" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="copper_cable_texture0.png" x="43" y="242" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="corn_texture0.png" x="59" y="76" w="3" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="cpu_texture0.png" x="45" y="204" w="9" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="fly_body_texture0.png" x="58" y="2" w="4" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="fly_wing_left_texture0.png" x="59" y="100" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="fly_wing_right_texture0.png" x="59" y="100" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="gold_bar_texture0.png" x="40" y="247" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="handcar_texture0.png" x="56" y="211" w="6" h="9" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="insulated_copper_cable_texture0.png" x="59" y="92" w="3" h="6" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="iron_bar_texture0.png" x="45" y="247" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="lamp_off_texture0.png" x="59" y="56" w="3" h="8" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="lamp_on_texture0.png" x="59" y="66" w="3" h="8" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="lead_bar_texture0.png" x="50" y="232" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="minecart_texture0.png" x="2" y="125" w="18" h="51" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="moon_texture0.png" x="2" y="2" w="39" h="121" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_chest_small_part_bottom_texture0.png" x="20" y="237" w="13" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_chest_small_part_top_texture0.png" x="19" y="184" w="24" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_chest_small_texture0.png" x="2" y="218" w="16" h="35" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_chest_texture0.png" x="22" y="125" w="40" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="power_line_texture0.png" x="39" y="207" w="3" h="6" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pumpkin_texture0.png" x="44" y="227" w="6" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="rail_straight_updown_texture0.png" x="37" y="232" w="6" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="rail_texture0.png" x="37" y="232" w="6" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="rail_turn_texture0.png" x="35" y="237" w="6" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="rail_updown_texture0.png" x="35" y="237" w="6" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="silver_bar_texture0.png" x="48" y="237" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="stool_wood_texture0.png" x="58" y="10" w="4" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="table_big_wood_texture0.png" x="39" y="200" w="4" h="5" pX="0.5" pY="0.5"/>
+    <sprite n="table_wood_texture0.png" x="58" y="26" w="4" h="6" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="tin_bar_texture0.png" x="48" y="242" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="torch_off_texture0.png" x="35" y="242" w="6" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="torch_on_texture0.png" x="35" y="247" w="3" h="6" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="train_engine_coal_2_texture0.png" x="44" y="212" w="9" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="train_engine_coal_texture0.png" x="59" y="45" w="3" h="9" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="urania_bar_texture0.png" x="55" y="230" w="3" h="3" pX="0.5" pY="0.5"/>
+    <sprite n="wall_storage_texture0.png" x="20" y="217" w="15" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="water_wheel_texture0.png" x="56" y="197" w="6" h="12" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="wood_door_handle_left_texture0.png" x="43" y="2" w="13" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="wood_door_handle_right_texture0.png" x="43" y="74" w="14" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="wrench_texture0.png" x="44" y="220" w="9" h="5" pX="0.5" pY="0.5"/>
+</TextureAtlas>
