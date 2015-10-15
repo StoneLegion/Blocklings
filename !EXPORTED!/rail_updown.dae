@@ -2,10 +2,10 @@
 <asset>
 <contributor>
 <author>VoxelShop User</author>
-<authoring_tool>VoxelShop V1.4.35</authoring_tool>
+<authoring_tool>VoxelShop V1.4.46</authoring_tool>
 </contributor>
-<created>2015-08-27T22:52:23</created>
-<modified>2015-08-27T22:52:23</modified>
+<created>2015-10-15T17:59:04</created>
+<modified>2015-10-15T17:59:04</modified>
 <unit meter="1" name="meter"/>
 <up_axis>Y_UP</up_axis>
 </asset>
